@@ -13,6 +13,7 @@ public class registrationController {
 
     @GetMapping("registration")
     public String registration(Map<String,Object> model){
-        return "registration";
+        // to not oversubmit the same information , use the redirect
+        return "redirect:registration";
     }
 }
