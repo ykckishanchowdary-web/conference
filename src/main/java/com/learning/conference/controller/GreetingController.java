@@ -16,4 +16,10 @@ public class GreetingController {
         //look for the greeting jsp and replace that message inthe Jsp file
         return "greeting";
     }
+
+    @GetMapping("thyme")
+    public String thyme(Map<String,Object> model){
+        model.put("message","hello Thymeleaf");
+        return "thyme";
+    }
 }
